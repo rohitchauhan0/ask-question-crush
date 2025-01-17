@@ -18,7 +18,7 @@ export const POST = async (req) => {
                 `;
             }).join("");
 
-            await mailsender("beatfeelrc121@gmail.com", "Response", formattedResponses);
+            await mailsender("Your_mail", "Response", formattedResponses);
 
         } else {
             console.error("Expected responses to be an object, but got:", typeof responses);
